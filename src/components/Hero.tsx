@@ -13,7 +13,7 @@ import { ArrowDown, MessageSquare } from 'lucide-react';
  */
 export default function Hero() {
   const basePath = process.env.NODE_ENV === 'production' ? '/AllanPhotography' : '';
-  const WHATSAPP_URL = "https://wa.me/50600000000?text=Hola,%20quiero%20cotizar%20una%20sesión%20fotográfica%20o%20de%20drone";
+  const WHATSAPP_URL = "https://wa.me/50660716690?text=Hola,%20quiero%20cotizar%20una%20sesión%20fotográfica%20o%20de%20drone";
 
   const handleScrollToServices = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
@@ -33,15 +33,15 @@ export default function Hero() {
   };
 
   return (
-    <section 
-      id="inicio" 
+    <section
+      id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
       {/* IMAGEN DE FONDO CINEMATOGRÁFICA */}
       {/* Se utiliza un div con absolute inset-0 y fondo optimizado para lograr un aspecto de pantalla completa */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10000ms] scale-105 hover:scale-100"
-        style={{ 
+        style={{
           backgroundImage: `url('${basePath}/images/hero_bg.png')`,
         }}
       />
@@ -54,7 +54,7 @@ export default function Hero() {
 
       {/* CONTENIDO PRINCIPAL */}
       <div className="relative z-20 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center">
-        
+
         {/* Línea decorativa dorada */}
         <div className="w-12 h-[2px] bg-amber-500 mb-6 animate-fade-in-up" />
 
@@ -96,7 +96,7 @@ export default function Hero() {
 
       {/* FLECHA DE DESPLAZAMIENTO HACIA ABAJO */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-        <button 
+        <button
           onClick={handleScrollToServices}
           className="p-2 text-neutral-400 hover:text-amber-500 transition-colors"
           aria-label="Desplazar hacia abajo"
