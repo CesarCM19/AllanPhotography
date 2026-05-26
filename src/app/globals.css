@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "../styles/animations.css";
+
+/* ==========================================
+   ESTILOS GLOBALES - AllanPhotography
+   Comentarios explicativos en español
+   ========================================== */
+
+/* Variables CSS para facilitar cambios globales de color y estilo */
+:root {
+  --color-primary-dark: #0a0a0a;   /* Fondo negro cinematográfico profundo */
+  --color-secondary-dark: #121212; /* Fondo de tarjetas y secciones secundarias */
+  --color-accent-gold: #d4af37;    /* Dorado suave de acento premium */
+  --color-accent-gold-hover: #f3e5ab; /* Dorado claro en hover */
+  --text-muted: #a3a3a3;           /* Gris suave para subtítulos */
+}
+
+/* Configuración básica de HTML y comportamiento */
+html {
+  scroll-behavior: smooth; /* Habilita el desplazamiento suave al hacer clic en enlaces del navbar */
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden; /* Evita scrolls horizontales accidentales en dispositivos móviles */
+}
+
+/* Scrollbar personalizado y elegante de estilo cinematográfico */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-gold);
+}
+
+/* Estilos para selecciones de texto elegantes */
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
+  color: #ffffff;
+}
