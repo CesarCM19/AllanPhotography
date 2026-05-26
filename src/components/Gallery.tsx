@@ -22,6 +22,7 @@ interface GalleryItem {
  */
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState<'todos' | 'fotografia' | 'drone' | 'eventos'>('todos');
+  const basePath = process.env.NODE_ENV === 'production' ? '/AllanPhotography' : '';
 
   // Datos estructurados de la galería de imágenes
   const galleryItems: GalleryItem[] = [
@@ -128,7 +129,7 @@ export default function Gallery() {
               {/* IMAGEN
                   Se utiliza tag img nativo para mayor flexibilidad con URLs externas de Unsplash y archivos locales */}
               <img
-                src={item.image}
+                src={item.image.startsWith('http') ? item.image : `${basePath}${item.image}`}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 loading="lazy"

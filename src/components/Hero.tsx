@@ -12,6 +12,7 @@ import { ArrowDown, MessageSquare } from 'lucide-react';
  * - Botón interactivo de WhatsApp que desplaza al usuario al chat con un mensaje preestablecido.
  */
 export default function Hero() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/AllanPhotography' : '';
   const WHATSAPP_URL = "https://wa.me/50600000000?text=Hola,%20quiero%20cotizar%20una%20sesión%20fotográfica%20o%20de%20drone";
 
   const handleScrollToServices = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -41,7 +42,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10000ms] scale-105 hover:scale-100"
         style={{ 
-          backgroundImage: "url('/images/hero_bg.png')",
+          backgroundImage: `url('${basePath}/images/hero_bg.png')`,
         }}
       />
 
