@@ -84,7 +84,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xs uppercase tracking-wider text-neutral-400 font-semibold mb-1">Teléfono</h4>
                     <p className="text-sm font-medium hover:text-amber-500 transition-colors">
-                      <a href="tel:+50600000000">+506 6071 6690</a>
+                      <a href="tel:+50660716690">+506 6071 6690</a>
                     </p>
                   </div>
                 </div>
