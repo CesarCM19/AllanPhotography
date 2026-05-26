@@ -1,8 +1,7 @@
-import type { NextConfig } from "next";
-
+/** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   // Habilita la exportación estática de Next.js. Genera archivos HTML/CSS/JS independientes en la carpeta 'out'
   output: 'export',
   
@@ -16,4 +15,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
